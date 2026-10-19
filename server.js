@@ -13,7 +13,7 @@ const server = http.createServer(async (req, res) => {
     const count = await collection.countDocuments();
     await client.close();
     res.statusCode = 200;
-    res.end(`<h1>Day 6: Two-Tier App on AKS!</h1><p>Total database visits: <b>${count}</b></p><p>Fresh deployment success!</p>`);
+    res.end(`<h1>Day 6: Mahi and PCR!</h1><p>Total database visits: <b>${count}</b></p><p>Fresh deployment success!</p>`);
   } catch (err) {
     res.statusCode = 500;
     res.end(`<h1>Database Connection Error</h1><p>${err.message}</p>`);
